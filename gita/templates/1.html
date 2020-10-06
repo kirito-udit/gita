@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>अध्याय १  &mdash; </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+  <link rel="stylesheet" href="{% static 'magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'lightgallery.min.css' %}">    
+
+  <link rel="stylesheet" href="{% static 'bootstrap-datepicker.css' %}">
+
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+  <link rel="stylesheet" href="{% static 'swiper.css' %}">
+
+  <link rel="stylesheet" href="{% static 'aos.css' %}">
+
+  <link rel="stylesheet" href="{% static 'style2.css' %}">
+  <link rel="stylesheet" href="{% static 'card.css' %}">
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2" data-aos="fade-down">
+           
+          </div>
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+    <h2 class="mb-0"><a href="{% url 'home' %}" class="text-white h2 mb-0" style="color: white; size: 200px;align-self: center;">SHREE BHAGWAT GITA</a></h2><br>
+    <h1 class="mb-0" ><a class="text-white h2 mb-0" style="color: white; size: 200px;align-self: center;">अध्याय १</a></h1>
+    <body>
+     {% for i in obj1 %}
+    <div class="card middle">
+      <div class="front">
+        <img src="{% static 'images/back.jpg' %}" style="align-self: center;">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>{{i.Title}}</h2>
+          <span>{{i.Sanskrit}}</span>
+          <span>{{i.English}}</span>
+        </div>
+      </div>
+    </div>
+    <br> <br><br>
+{% endfor %}
+
+
+  </body>
+</html>
+
+    </body>
+    <script src="{% static 'jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'jquery-ui.js' %}"></script>
+  <script src="{% static 'popper.min.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+  <script src="{% static 'owl.carousel.min.js' %}"></script>
+  <script src="{% static 'jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'swiper.min.js' %}"></script>
+  <script src="{% static 'aos.js' %}"></script>
+
+  <script src="{% static 'picturefill.min.js' %}"></script>
+  <script src="{% static 'lightgallery-all.min.js' %}"></script>
+  <script src="{% static 'main.js' %}"></script>
+
+  <script src="{% static 'main.js' %}"></script>
+  
+
+
+</body>
+</html>
